@@ -45,3 +45,20 @@ console.log(`The minimum value is ${arrMin}`);
 // }
 // console.log("The smallest number is: " + min)
 // console.log("The largest number is: " + max)
+
+//Solution #5 - Lukas Nesittka (Instructor)
+let top = array[0];
+let bottom = array[0];
+
+for(let i = 0; i < array.length; i++) {
+    let currentValue = array[i];
+    if(currentValue < min){
+        console.log(`The current value ${currentValue} is lower than our current minimum ${min}`);
+        min = currentValue;
+    }
+    if(currentValue > max){
+        console.log(`The current value ${currentValue} is lower than our current minimum ${max}`);
+        max = currentValue;
+    }
+}
+console.log(`In the array ${array} the max value is ${max} and the min value is ${min}`);
