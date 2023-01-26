@@ -221,11 +221,11 @@ default:
   ...
 */
 
-Code Here
+// Code Here
 for (let i = 1; i <= 100; i++) {
   //Using a series of if else statements to check for conditions
   //first if i is divisible by both 3 and 5
-  if (i % 3 === 0 && i % 5 === 0) {
+  if (i % 3 === i % 5) {
       console.log("Devmountain");
       //then if divisible by 3
   } else if (i % 3 === 0) {
@@ -239,7 +239,7 @@ for (let i = 1; i <= 100; i++) {
   }
 }
 
-//Attempted solution using switch statement, does not work.
+// Attempted solution using switch statement, does not work.
 // for (let i = 1; i <= 100; i++) {
 //   switch(i) {
 //     case i%3===i%5:
