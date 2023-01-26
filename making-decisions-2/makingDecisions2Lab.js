@@ -221,7 +221,7 @@ default:
   ...
 */
 
-//Code Here
+Code Here
 for (let i = 1; i <= 100; i++) {
   //Using a series of if else statements to check for conditions
   //first if i is divisible by both 3 and 5
@@ -238,3 +238,20 @@ for (let i = 1; i <= 100; i++) {
       console.log(i);
   }
 }
+
+//Attempted solution using switch statement, does not work.
+// for (let i = 1; i <= 100; i++) {
+//   switch(i) {
+//     case i%3===i%5:
+//       console.log("Devmountain");
+//       break;
+//     case i%3===0:
+//       console.log("Dev");
+//       break;
+//     case i%5===0:
+//       console.log("Mountain");
+//       break;
+//     default:
+//       console.log(i);
+//   }
+// }
