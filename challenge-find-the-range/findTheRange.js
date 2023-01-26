@@ -24,3 +24,17 @@ for (let i = 1; i < array.length; i++) {
     arrMin = Math.min(arrMin, array[i]);
 }
 console.log(arrMax, arrMin);
+
+//Solution #3 - Brad Tolson
+// let lowest = Math.min(...array);
+// console.log('Lowest Number:' + lowest);
+// let highest = Math.max(...array);
+// console.log('Highest Number:' + highest);
+
+//Solution #4 - BatuhanSundseth
+// let min, max = array[0]
+// for (i = 0; i <= array.length; i++) {
+//   array[i] < min ? min = array[i] : (array[i] > max ? max = array [i] : min = min)
+// }
+// console.log("The smallest number is: " + min)
+// console.log("The largest number is: " + max)
