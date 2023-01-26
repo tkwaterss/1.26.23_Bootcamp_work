@@ -4,8 +4,13 @@ let array = [28, 43, -12, 30, 4, 0, -36]
 // Write your solution below:
 
 //Solution #1
-    let max = 0;
-    let min = 0;
+
+// this method is faulty because it requires that a value in the array is less
+// than 0
+    // let max = 0;
+    // let min = 0;
+    let max = array[0];
+    let min = array[0];
 for (let i = 0; i < array.length; i++) {
     if (array[i] < min) {
         min = array[i];
@@ -13,7 +18,8 @@ for (let i = 0; i < array.length; i++) {
         max = array[i];
     }
 }
-console.log(max,min);
+console.log(`The maximum value is ${max}`);
+console.log(`The minimum value is ${min}`);
 
 //Solution #2
 let arrMax = array[0];
@@ -23,7 +29,8 @@ for (let i = 1; i < array.length; i++) {
     arrMax = Math.max(arrMax, array[i]);
     arrMin = Math.min(arrMin, array[i]);
 }
-console.log(arrMax, arrMin);
+console.log(`The maximum value is ${arrMax}`);
+console.log(`The minimum value is ${arrMin}`);
 
 //Solution #3 - Brad Tolson
 // let lowest = Math.min(...array);
